@@ -1,0 +1,9 @@
+@mixin flex ($direction, $justify,$align) {
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+// @include
+
+//  aca crear variables a aplicar con @extend

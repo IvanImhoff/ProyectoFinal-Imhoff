@@ -1,0 +1,155 @@
+
+.main_proce {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 100px;
+    background-image: url("../Multimedia/Random/fondo\ \(5\).jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    // background-attachment: fixed;
+
+    .intro_proce {
+        text-align: center;
+        padding-bottom: 30px;
+    }
+
+    .roseta1 {
+        border: inset 5px #1919199c;
+        border-right: none;
+        border-radius: 20px;
+        padding: 3vh;
+        
+
+        h4 {
+            text-align: center;
+            padding-bottom: 20px;
+        }
+    }
+
+    .roseta2 img{
+        object-fit: cover;
+        width: 500px;
+        height: 500px;
+        border-radius: 20px;
+        box-shadow: 3px 5px 3px 3px rgba(0, 0, 0, 0.2);
+    }
+
+    .prensado1 {
+        border: inset 5px #1919199c;
+        border-left: none;
+        border-radius: 20px;
+        padding: 3vh;
+        color: $colorlogo1;
+        transition: 0.4s;
+        
+        &:hover {
+            background-color: $colorlogo3bg;
+        }
+        h4 {
+            text-align: center;
+            padding-bottom: 10px;
+        }
+    }
+
+    .prensado2 img{
+        object-fit: cover;
+        width: 500px;
+        height: 500px;
+        border-radius: 20px;
+        box-shadow: 3px 5px 3px 3px rgba(0, 0, 0, 0.2);
+    }
+    
+    .interval2 {
+        padding-top: 100px;
+        display: flex;
+        flex-direction: row-reverse;
+        
+    }
+
+    .interval3 {
+        padding-top: 100px;
+        display: flex;
+    }
+
+    .mastil1 {
+        border: inset 5px #1919199c;
+        border-right: none;
+        border-radius: 20px;
+        padding: 3vh;
+        margin
+        h4 {
+            text-align: center;
+            padding-bottom: 20px;
+        }
+    }
+
+    .mastil2 img{
+        object-fit: cover;
+        width: 500px;
+        height: 500px;
+        border-radius: 20px;
+        box-shadow: 3px 5px 3px 3px rgba(0, 0, 0, 0.2);
+    }
+}
+
+
+
+// .main-proce {
+//     display: grid;
+//     grid-template-columns: repeat(12, 1fr);
+//     grid-template-rows: 200px auto auto;
+//     grid-template-areas: 
+//     "area0 area1 area1 area1"
+//     "area2 area3 area4 area4"
+//     "area5 area5 area7 area8"
+//     ;
+
+// }
+
+// .main-proce h3 {
+//     text-align: center;
+//     padding: 20px;
+// }
+
+// .e1 {
+//     grid-area: area1;
+// }
+
+// .e2 {
+//     grid-area: area2;
+//     border: inset 10px #1919199c;
+//     border-right: none;
+//     border-radius: 20px;
+// }
+
+// .e3 {
+//     grid-area: area4;
+// }
+
+// .roseta img {
+//     object-fit: cover;
+//     width: 500px;
+//     height: 500px;
+//     border-radius: 20px;
+//     box-shadow: 3px 5px 3px 3px rgba(0, 0, 0, 0.2);
+
+// }
+
+// .mastil img {
+//     object-fit: cover;
+//     width: 500px;
+//     height: 500px;
+//     border-radius: 20px;
+//     box-shadow: 3px 5px 3px 3px rgba(0, 0, 0, 0.2);
+// }
+
+// .m1 {
+//     grid-area: area8;
+//     border: inset 10px #1919199c;
+//     border-left: none;
+//     border-radius: 20px;
+// }
+
+// .m2 {
+//     grid-area: area5;
+// }

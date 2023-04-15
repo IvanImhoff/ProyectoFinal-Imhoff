@@ -1,0 +1,30 @@
+
+.nav-link {
+    transition: 0.5s;
+    
+}
+
+.nav-link:hover {
+    background-color: black;
+}
+
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.secondnav {
+    position: fixed;
+    width: 100%;
+    background-color: #19191991;
+    opacity: 10%;
+    transition: 0.3s;
+}
+
+.secondnav:hover {
+    opacity: 100%;
+    z-index: 1;
+}
+
+.container-fluid {
+    background-color: $colorlogo2;
+}

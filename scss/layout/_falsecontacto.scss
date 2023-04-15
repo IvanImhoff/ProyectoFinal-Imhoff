@@ -1,0 +1,122 @@
+.main_contacto {
+    background-image: url("../Multimedia/Random/fondo10.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+    .form_area {
+        display: grid;
+        place-items: center;
+        height: 80vh;
+
+        form {
+            width: 400px;
+            height: auto;
+            color: #fff;
+            padding: 5px 3px;
+            box-shadow: 0 0 1rem 0 rgba(0,0,0,0.2);
+            position: relative;
+
+        }
+        h3 {
+            color: #fff;
+        }
+        p {
+            color: #fff;
+            font-weight: bold;
+        }
+
+        input {
+            border: none;
+        }
+
+        
+    }
+
+    
+}
+
+.form {
+    text-align: center;
+    width: 400px;
+    height: auto;
+
+    &::before {
+        content:"";
+        position: absolute;
+        background: inherit;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        box-shadow: inset 0 0 2000px rgba(255,255,255,0.5);
+        filter: blur(2px);
+
+
+    }
+    input {
+        color: #eee;
+        border: none;
+        border-bottom: 1px solid #fff;
+        background: transparent;
+        outline: none;
+        height: 40px;
+        color: #fff;
+        font-size: 18px;
+        width: 100%;
+        margin-bottom: 20px;
+        
+    }
+
+    textarea {
+        border: none;
+        border-bottom: 1px solid #fff;
+        background-color: transparent;
+        outline: none;
+        height: 50px;
+        font-size: 18px;
+        width: 100%;
+        margin-bottom: 20px;
+
+    }
+
+    .boton {
+        display: block;
+        text-align: center;
+        text-decoration: none;
+        color: $colorlogo3;
+        margin-top: 15px;
+        padding: 10px;
+        background: $colorlogo1;
+        text-transform: uppercase;
+        font-weight: 500;
+        letter-spacing: 3px;
+
+
+    }
+}
+
+
+
+
+
+
+
+// .main_contacto {
+//     img {
+//         width: 100%;
+//         height: auto;
+//         position: absolute;
+//         object-fit: cover;
+//     }
+//     p {
+//         position: relative;
+//         color: #eee;
+//     }
+// }
+
+// .footer_contacto {
+//     position: relative;
+//     bottom: 0;
+// }
