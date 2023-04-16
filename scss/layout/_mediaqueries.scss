@@ -69,6 +69,11 @@
 
 @media only screen and (max-width: 1000px){
 
+    .main_proce {
+        .interval {
+
+        }
+    }
 
     .index-left h1{
         font-size: 30px;
@@ -133,6 +138,60 @@
 
     .container-prod h2 {
         padding: 25px 0px;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .main_proce{
+
+        .interval {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+
+            .roseta1 {
+                border-bottom: none;
+            }
+
+            .roseta2 {
+                img {
+                    height: 32vh;
+                }
+            }
+            .prensado1 {
+                border-bottom: none;
+                color: $colorlogo3;
+            }
+
+            .prensado2 {
+                img {
+                    height: 32vh;
+                }
+            }
+
+            .mastil1 {
+                border-bottom: none;
+
+            }
+
+            .mastil2 {
+                img {
+                    height: 32vh;
+                }
+            }
+
+            .diapason1 {
+                border-bottom: none;
+                color: $colorlogo3;
+            }
+
+            .diapason2 {
+                img {
+                    height: 32vh;
+                }
+            }
+
+        }
     }
 }
 
