@@ -19,19 +19,27 @@
         
     }
 
-        .caja img {
-        width: 350px;
+.caja {
+    img {
+        max-width: 100%;
         height: 350px;
         object-fit: cover;
         border-radius: 15px;
     }
+}
 
-    .instrumentos2 li {
-        padding: 50px 0px;
-        font-size: 18px;
-        color: #fff1e5;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        
+
+    .instrumentos2 {
+        li {
+            padding: 50px 0px;
+            font-size: 18px;
+            color: #fff1e5;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
     }
+    
+    
     
 }
 
@@ -51,14 +59,18 @@
         gap: 12px;
     }
 
-    .caja img {
-        width: 100%;
-        max-height: 500px;
-        height: 100%;
-        object-fit: cover;
-        border-radius: 15px;
-        
+    .caja {
+        img {
+            width: 100%;
+            max-height: 500px;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 15px;
+            
+        }
     }
+    
+    
 
     .instrumentos2 li {
         padding: 28% 0;
@@ -103,7 +115,6 @@
 
     .container-serv {
         justify-content: space-evenly;
-
     }
 }
 
@@ -130,15 +141,16 @@
 
     .container-prod {
         width: 70%;
+        
+        h2 {
+            padding: 25px 0px;
+        }
     }
 
     .introprod {
         width: 70%;
     }
 
-    .container-prod h2 {
-        padding: 25px 0px;
-    }
 }
 
 @media only screen and (max-width: 768px){

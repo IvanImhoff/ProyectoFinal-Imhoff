@@ -33,14 +33,15 @@
             }
         }
         
-        .roseta2 {
-
+        .carousel-inner {
+            
             img {
                 object-fit: cover;
                 width: 500px;
                 height: 500px;
                 border-radius: 20px;
                 box-shadow: 3px 5px 3px 3px rgba(0, 0, 0, 0.2);
+                
             }
         }
 
@@ -60,17 +61,6 @@
                 padding-bottom: 10px;
             }
         }
-    
-        .prensado2 {
-            
-            img{
-                object-fit: cover;
-                width: 500px;
-                height: 500px;
-                border-radius: 20px;
-                box-shadow: 3px 5px 3px 3px rgba(0, 0, 0, 0.2);
-            }
-        }
 
         .mastil1 {
             border: inset 5px $colorlogo3;
@@ -85,18 +75,6 @@
             }
         }
     
-        .mastil2 {
-
-            img{
-                object-fit: cover;
-                width: 500px;
-                height: 500px;
-                border-radius: 20px;
-                box-shadow: 3px 5px 3px 3px rgba(0, 0, 0, 0.2);
-            }
-        }
-        
-    
         .diapason1 {
             border: inset 5px #1919199c;
             border-left: none;
@@ -108,25 +86,8 @@
                 background-color: $colorlogo3bg;
             }
         }
-    
-        .diapason2 {
-
-            img{
-                object-fit: cover;
-                width: 550px;
-                height: 500px;
-                border-radius: 20px;
-                box-shadow: 3px 5px 3px 3px rgba(0, 0, 0, 0.2);
-            }
-        }
     }
-    
-
-
-
-
-    }
-    
+}
 
     
 
