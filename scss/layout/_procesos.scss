@@ -3,17 +3,19 @@
     display: flex;
     flex-wrap: wrap;
     padding: 100px;
-    background-image: url("../Multimedia/Random/fondo9.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-color: $colorlogo2;
+    // background-image: url("../Multimedia/Random/fondo9.jpg");
+    // background-size: cover;
+    // background-repeat: no-repeat;
+    overflow: hidden;
     // background-attachment: fixed;
     & :nth-child(odd){
-        flex-direction: row-reverse;
+    flex-direction: row-reverse;
     }
     .intro_proce {
         text-align: center;
         padding-bottom: 30px;
-        color: $colorlogo1;
+        @extend .h1std;
     }
 
     .interval {
@@ -27,9 +29,10 @@
             border-radius: 20px;
             padding: 3vh;
             color: #fff;
-            h4 {
+            h2 {
                 text-align: center;
                 padding-bottom: 20px;
+                font-size: 22px;
             }
         }
         
@@ -56,7 +59,7 @@
             &:hover {
                 background-color: $colorlogo3bg;
             }
-            h4 {
+            h2 {
                 text-align: center;
                 padding-bottom: 10px;
             }
@@ -69,9 +72,10 @@
             padding: 3vh;
             color: $colorlogo1;
 
-            h4 {
+            h2 {
                 text-align: center;
                 padding-bottom: 20px;
+                font-family: 'Italianno', cursive;
             }
         }
     
@@ -88,66 +92,3 @@
         }
     }
 }
-
-    
-
-
-// .main-proce {
-//     display: grid;
-//     grid-template-columns: repeat(12, 1fr);
-//     grid-template-rows: 200px auto auto;
-//     grid-template-areas: 
-//     "area0 area1 area1 area1"
-//     "area2 area3 area4 area4"
-//     "area5 area5 area7 area8"
-//     ;
-
-// }
-
-// .main-proce h3 {
-//     text-align: center;
-//     padding: 20px;
-// }
-
-// .e1 {
-//     grid-area: area1;
-// }
-
-// .e2 {
-//     grid-area: area2;
-//     border: inset 10px #1919199c;
-//     border-right: none;
-//     border-radius: 20px;
-// }
-
-// .e3 {
-//     grid-area: area4;
-// }
-
-// .roseta img {
-//     object-fit: cover;
-//     width: 500px;
-//     height: 500px;
-//     border-radius: 20px;
-//     box-shadow: 3px 5px 3px 3px rgba(0, 0, 0, 0.2);
-
-// }
-
-// .mastil img {
-//     object-fit: cover;
-//     width: 500px;
-//     height: 500px;
-//     border-radius: 20px;
-//     box-shadow: 3px 5px 3px 3px rgba(0, 0, 0, 0.2);
-// }
-
-// .m1 {
-//     grid-area: area8;
-//     border: inset 10px #1919199c;
-//     border-left: none;
-//     border-radius: 20px;
-// }
-
-// .m2 {
-//     grid-area: area5;
-// }

@@ -1,20 +1,20 @@
 
-.nav-link {
-    transition: 0.5s;
-    font-family: "LexendZetta-ExtraBold.ttf";
-    font-size: 20px;
 
-    &:hover {
-        background-color: black;
-    }
-
-}
 
 .container-fluid {
-    background: linear-gradient(45deg, $colorlogo3, $colorlogo2, $colorlogo1);
+    background: linear-gradient(45deg, $colorlogo3 20%, $colorlogo2 50%, $colorlogo1);
 
     .navbar-brand {
-        font-size: 26px;
-        font-family: "ppeiko-lightItalic.ttf";
+        font-size: 34px;
+        letter-spacing: 3px;
+        font-family: 'Italianno', cursive;
+    }
+    .nav-link {
+        transition: 0.5s;
+        font-family: "p";
+        font-size: 20px;
+        position: relative;
+
+        
     }
 }
