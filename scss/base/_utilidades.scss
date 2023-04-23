@@ -6,14 +6,23 @@
     flex-wrap: $wrap;
 }
 
-
-// @include
-
 .h1std {
     letter-spacing: 5px;
     font-size: 60px;
     color: #fff;
     font-family: 'Italianno', cursive;
+    @media only screen and (max-width: 768px){ 
+        font-size: 45px;
+    }
 }
 
-//  aca crear variables a aplicar con @extend
+.h2std {
+    text-align: center;
+    font-family: 'Italianno', cursive;
+    font-size: 45px;
+    color: $colorlogo1;
+    @media only screen and (max-width: 768px){ 
+        font-size: 30px;
+    }
+
+}

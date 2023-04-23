@@ -1,14 +1,11 @@
 
 .mainindex {
-    // background-image: url("../multimedia/random/fondo10.jpg");
-    // background-size: cover;
     background-color: #191919;
     height: 100vh;
 
     .index_first {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-row: auto;
         align-items: center;
         height: 100%;
         color: #eee;
@@ -21,7 +18,6 @@
             }
             h2 {
                 @extend .h1std;
-                font-size: 50px;
             }
         }
         &_right {

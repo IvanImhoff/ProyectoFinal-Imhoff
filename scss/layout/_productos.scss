@@ -20,15 +20,16 @@
         li {
             padding: 30% 0;
             font-size: 22px;
-            color: #fff1e5;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
         }
         .inst-links {
             color: #f1e9e9;
         }
     }
+    p {
+        color: #eee;
+    }
 }
-
 
 .container-prod {
     position: relative;
@@ -48,6 +49,7 @@
     justify-items: center;
 
     h2 {
+        @extend .h2std;
         padding: 50px 0px;
     }
     img {

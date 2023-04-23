@@ -26,14 +26,6 @@
         object-fit: cover;
         border-radius: 15px;
     }
-
-    .instrumentos2 li {
-        padding: 50px 0px;
-        font-size: 18px;
-        color: #fff1e5;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-    }
-    
 }
 
 
@@ -61,40 +53,74 @@
         
     }
 
-    .instrumentos2 li {
-        padding: 28% 0;
-        font-size: 20px;
+    .instrumentos2 {
+        a {
+            padding: 28% 0;
+            font-size: 18px;
+        }
     }
+    
 }
 
 
 @media only screen and (max-width: 1000px){
-
-    .main_proce {
-        .interval {
-
+    // index
+        .mainindex {
+        padding: 50px 0;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        .index_first {
+            display: flex;
+            flex-direction: column;
+            &_left {
+                padding: 50px 0;
+            }
+            &_right {
+                width: 80%;
+            }
         }
     }
 
-    .index-left h1{
-        font-size: 30px;
+    // procesos
+    
+    .main_proce{
+
+        .interval {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            padding-top: 50px;            
+            .roseta1 {
+                border-bottom: none;
+                width: 100%;
+                justify-content: center;
+            }
+
+            .roseta2 {
+                img {
+                    height: 32vh;}
+            }
+            .prensado1 {
+                border-bottom: none;
+                width: 100%;
+                justify-content: center;
+            }
+
+            .prensado2 {
+                img {
+                    height: 32vh;}
+            }
+        }
     }
 
-    .index-left p{
-        font-size: 16px;
-        margin-bottom: 0;
-    }
+    // productos
 
-    .incarousel h3{
-        font-size: 22px;
-    }
-
-    .incarousel p{
-        font-size: 16px;
-    }
-
-    .instrumentos2 li {    
-        font-size: 16px;
+    .instrumentos2 {
+        a {
+            padding: 28% 0;
+            font-size: 16px;
+        }
     }
 
 
@@ -102,27 +128,17 @@
         font-size: 16px;
     }
 
-    .container-serv {
+    // CONTACTO
+    .maincontacto {
+        display: flex;
+        flex-direction: row;
         justify-content: space-evenly;
     }
+
+
 }
 
-
 @media only screen and (max-width: 800px){
-
-    .mainindex {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 1rem 20px 20px 20px;
-    }
-
-    .index-left {
-    padding: 0;
-    }
-
-    .index-left h1{
-        font-size: 24px;
-    }
 
     .instrumentos {    
     width: 12%;
@@ -130,70 +146,57 @@
 
     .container-prod {
         width: 70%;
+        h2 {
+            padding: 25px 0px;
+        }
     }
 
     .introprod {
         width: 70%;
     }
+}  
+@media only screen and (max-width: 768px){
 
-    .container-prod h2 {
-        padding: 25px 0px;
+    // INDEX
+    .index_first_left {
+        h1 {
+            font-size: 50px;
+            color: red;
+        }
     }
 
-}
-
-@media only screen and (max-width: 768px){
+    // PROCESOS
     .main_proce{
-
         .interval {
             display: flex;
             flex-direction: column;
-            gap: 30px;
+            padding-top: 30px;
 
             .roseta1 {
                 border-bottom: none;
             }
 
             .roseta2 {
-                img {
-                    height: 32vh;
-                }
+                width: 100%;
+                height: 100%
             }
             .prensado1 {
                 border-bottom: none;
-                color: $colorlogo3;
             }
 
             .prensado2 {
-                img {
-                    height: 32vh;
-                }
+                width: 100%;
+                height: 100%
+                
             }
-
-            .mastil1 {
-                border-bottom: none;
-
-            }
-
-            .mastil2 {
-                img {
-                    height: 32vh;
-                }
-            }
-
-            .diapason1 {
-                border-bottom: none;
-                color: $colorlogo3;
-            }
-
-            .diapason2 {
-                img {
-                    height: 32vh;
-                }
-            }
-
         }
     }
+    // contacto
+    .maincontacto {
+        @include flex (column, center, center, wrap);
+        gap: 50px;
+        padding: 15px;
+    } 
 }
 
 @media only screen and (max-width: 700px){
@@ -205,5 +208,21 @@
     .mainprod_container {
         display: flex;
         flex-wrap: wrap;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    // contacto
+    .maincontacto {
+        padding: 15px 0;
+        .formulario {
+            width: 70%;
+            h1 {
+                font-size: 40px;
+            }
+        }
+        .mapa {
+            width: 100%;
+        }
     }
 }

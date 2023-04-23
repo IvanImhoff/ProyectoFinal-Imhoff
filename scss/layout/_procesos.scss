@@ -2,13 +2,9 @@
 .main_proce {
     display: flex;
     flex-wrap: wrap;
-    padding: 100px;
+    padding: 50px;
     background-color: #985434d0;
-    // background-image: url("../Multimedia/Random/fondo9.jpg");
-    // background-size: cover;
-    // background-repeat: no-repeat;
     overflow: hidden;
-    // background-attachment: fixed;
     & :nth-child(odd){
     flex-direction: row-reverse;
     }
@@ -23,72 +19,37 @@
         display: flex;
         justify-content: space-around;
 
+        h2 {
+            @extend .h2std;
+            font-size: 40px;
+        }
+
         .roseta1 {
-            border: inset 5px $colorlogo1;
-            border-right: none;
-            border-radius: 20px;
-            padding: 3vh;
-            color: #fff;
-            h2 {
-                text-align: center;
-                padding-bottom: 20px;
-                font-size: 22px;
-            }
-        }
-        
-        .carousel-inner {
-            
-            img {
-                object-fit: cover;
-                width: 500px;
-                height: 500px;
-                border-radius: 20px;
-                box-shadow: 3px 5px 3px 3px rgba(0, 0, 0, 0.2);
-                
-            }
-        }
-
-        .prensado1 {
-            border: inset 5px $colorlogo1;
-            border-left: none;
-            border-radius: 20px;
-            padding: 3vh;
-            color: $colorlogo1;
-            transition: 0.4s;
-            
-            &:hover {
-                background-color: $colorlogo3bg;
-            }
-            h2 {
-                text-align: center;
-                padding-bottom: 10px;
-            }
-        }
-
-        .mastil1 {
             border: inset 5px $colorlogo3;
             border-right: none;
             border-radius: 20px;
             padding: 3vh;
-            color: $colorlogo1;
-
-            h2 {
-                text-align: center;
-                padding-bottom: 20px;
-                font-family: 'Italianno', cursive;
+            color: #fff;
+        }
+        
+        .carousel-inner {
+            box-shadow: 1px 2px 9px 9px rgba(0,0,0,0.7);
+            -webkit-box-shadow: 1px 2px 9px 9px rgba(0,0,0,0.7);
+            -moz-box-shadow: 1px 2px 9px 9px rgba(0,0,0,0.7);
+            img {
+                object-fit: cover;
+                width: 500px;
+                height: 500px;
             }
         }
-    
-        .diapason1 {
-            border: inset 5px #1919199c;
+
+        .prensado1 {
+            border: inset 5px $colorlogo3;
             border-left: none;
             border-radius: 20px;
             padding: 3vh;
-            color: $colorlogo1;
+            color: #fff;
             transition: 0.4s;
-            &:hover {
-                background-color: $colorlogo3bg;
-            }
         }
     }
 }
