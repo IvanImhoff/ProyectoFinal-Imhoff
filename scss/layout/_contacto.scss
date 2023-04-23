@@ -1,13 +1,81 @@
 .maincontacto {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     padding: 50px;
-    justify-content: space-around;
+    background-color: #985434d0;
 
     .formulario {
         width: 50vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        border: 2px solid #eee;
+        border-radius: 10px;
+
+        p {
+            color: $colorlogo3;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        label {
+            width: 80%;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+        input {
+            outline: none;
+            width: 80%;
+            background-color: transparent;
+            color: #eee;
+            border: none;
+            border-bottom: 1px solid #eee;
+            &::placeholder {
+                color: #eee;
+                
+            }
+            &:focus {
+                background-color: $colorlogo3bg;
+            }
+        }
+        form {
+            color: #eee;    
+            li {
+                padding-top: 15px
+            }
+            textarea {
+                border: none;
+                border-bottom: 1px solid #fff;
+                background-color: transparent;
+                outline: none;
+                height: 80px;
+                font-size: 18px;
+                resize: none;
+                width: 80%;
+                margin-bottom: 20px;
+                color: #eee;
+                &:focus {
+                    background-color: $colorlogo3bg;
+                }
+                }
+            .boton {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: $colorlogo3;
+                width: 80%;
+                letter-spacing: 3px
+            }
+        }
+        h1 {
+            @extend .h1std;
+        }
     }
     .mapa {
-        width: 50vh;
+        height: 100%;
+        width: 100%;
+        border-radius: 10px;
     }
 }
 

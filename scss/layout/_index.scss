@@ -1,165 +1,37 @@
 
 .mainindex {
-    background-image: url("../Multimedia/jero/walp1.jpg");
-    background-size: cover;
+    // background-image: url("../multimedia/random/fondo10.jpg");
+    // background-size: cover;
+    background-color: #191919;
     height: 100vh;
 
     .index_first {
-        @include flex (row, center, center, wrap);
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-row: auto;
+        align-items: center;
         height: 100%;
+        color: #eee;
+        padding: 2%;
 
-        .index_first_left {
-            @include flex(row, center,center,wrap);
-            // display: flex;
-            // justify-content: center;
-
-            .index_first_left_top {
-                color: #eee;
-                background: inherit;
-                position: absolute;
-                text-align: center;
-                overflow: hidden;
-                padding: 10px 40px 0 40px;
-                border-radius: 16px;
-                box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3), 0 6px 20px rgba(0, 0, 0, 0.15);
-                z-index: 1;
-                transition: 1s;
-                
-    
-                &::before{
-                    content:"";
-                    position: absolute;
-                    background: inherit;
-                    top: 0;
-                    left: 0;
-                    right: 0;
-                    bottom: 0;
-                    margin: -20px;
-                    box-shadow: inset 0 0 500px rgba(255, 255, 255, .4); 
-                    filter: blur(10px);
-                    z-index: -1;
-                }
-                
-                h1 {
-                    @extend .h1std;
-                    text-shadow: -5px 3px 5px rgba(225,212,212,1);
-                    }
-    
-                p {
-                    letter-spacing: 5px;
-                    font-size: 45px;
-                    font-weight: 500;
-                    color: #fff;
-                    font-family: 'Italianno', cursive;
-                    text-align: center;
-                }
+        &_left {
+            text-align: center;
+            h1 {
+                @extend .h1std;
             }
-
-            .index_first_left_bot {
-                position: absolute;
-                bottom: 10%;
-                color: #eee;
-                font-family: 'Italianno', cursive;
-                letter-spacing: 5px;
-                text-shadow: -1px 1px 12px rgba(0,0,0,0.95);
-                background: linear-gradient(to top, #312f30ad 50%, #985434c2);
-                padding: 0 10px;
-                border-radius: 16px;
-                transform: translateY(30px);
-                transform: translateX(190px);
-                h2 {
-                    font-size: 40px;
-                    font-family: 'Italianno', cursive;
-                    letter-spacing: 5px;
-                    text-shadow: -5px 3px 5px rgba(225,212,212,1);
-                }
-
-                p {
-                    text-shadow: -1px 1px 12px rgba(0,0,0,0.95);
-                    font-size: 25px;
-                    font-weight: 500;
-                }
+            h2 {
+                @extend .h1std;
+                font-size: 50px;
             }
+        }
+        &_right {
+            background: linear-gradient(45deg, #312f30a4 20%, #985434a6 50%, #312f30a4);
+            border-radius: 10px;
+            padding: 5%;
+            & p::first-letter {
+                font-size: 130%;
+            } 
+        }
         
-        }
-
-    .index_right {
-        img {
-            height: 65vh;
-            width: 70vh;
-            border-radius: 16px;
-            filter: opacity(85%);
-        }
     }
 }
-}
-//     .index_first {
-//         @include flex (row,space-around, center, wrap);
-//         height: 100%;
-//         }
-        
-//         .index_left {
-//             color: #eee;
-//             background: inherit;
-//             overflow: hidden;
-//             padding: 25px 50px;
-//             border-radius: 16px;
-//             box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3), 0 6px 20px rgba(0, 0, 0, 0.15);
-//             z-index: 1;
-//             transition: 1s;
-            
-//             &::before{
-//                 content:"";
-//                 position: absolute;
-//                 background: inherit;
-//                 top: 0;
-//                 left: 0;
-//                 right: 0;
-//                 bottom: 0;
-//                 margin: -20px;
-//                 box-shadow: inset 0 0 500px rgba(255, 255, 255, .4); 
-//                 filter: blur(10px);
-//                 z-index: -1;
-                
-//             }
-
-//             h1 {
-//                 letter-spacing: 5px;
-//                 font-size: 80px;
-//                 color: #fff;
-//                 font-family: 'Italianno', cursive;
-                
-//             }
-
-//             p {
-//                 letter-spacing: 5px;
-//                 font-size: 50px;
-//                 color: #fff;
-//                 font-family: 'Italianno', cursive;
-//                 text-align: center;
-//             }
-
-//             &:hover {
-//             }
-//     }
-    
-//     .index_right {
-//         color: $colorlogo1;
-//         font-family: 'Italianno', cursive;
-//         letter-spacing: 5px;
-//         background-color: #1919196e;
-//         padding: 10px;
-//         border-radius: 16px;
-//         h2 {
-//             font-size: 50px;
-//             font-family: 'Italianno', cursive;
-//             letter-spacing: 5px;
-//             text-shadow: -5px 3px 5px rgba(225,212,212,1);
-//         }
-//         li {
-//             padding-top: 20px;
-//             font-size: 40px;
-            
-//         }
-//     }
-// }

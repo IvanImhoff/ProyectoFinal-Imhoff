@@ -1,15 +1,15 @@
-@keyframes move-left {
-    0% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateY(-80%);
-    }
-}
+// @keyframes move-left {
+//     0% {
+//         transform: translateX(0);
+//     }
+//     100% {
+//         transform: translateY(-80%);
+//     }
+// }
 
-.index_first_left_top {
-    animation: move-left 1s ease-in-out 2s forwards;
-}
+// .index_first_top {
+//     animation: move-left 1s ease-in-out 2s forwards;
+// }
 
 
 // @keyframes retard {

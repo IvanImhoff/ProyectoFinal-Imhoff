@@ -1,13 +1,3 @@
-@keyframes move-left {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateY(-80%);
-  }
-}
-.index_first_left_top {
-  animation: move-left 1s ease-in-out 2s forwards;
-}
+
 
 /*# sourceMappingURL=animaciones.css.map */

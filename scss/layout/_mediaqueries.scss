@@ -1,6 +1,7 @@
 
 @media only screen and (max-width: 1350px){
-    .mainprod_container {
+
+    .container-prod {
         position: relative;
         left: 15%;
         display: grid;
@@ -16,36 +17,29 @@
         width: 80%;
         padding-bottom: 50px;
         justify-items: center;
-        &_caja {
-            img {
-                max-width: 100%;
-                height: 350px;
-                object-fit: cover;
-                border-radius: 15px;
-            }
-        }
-    }
-
-
         
-
-    .instrumentos2 {
-        li {
-            padding: 50px 0px;
-            font-size: 18px;
-            color: #fff1e5;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-        }
     }
-    
-    
+
+        .caja img {
+        width: 350px;
+        height: 350px;
+        object-fit: cover;
+        border-radius: 15px;
+    }
+
+    .instrumentos2 li {
+        padding: 50px 0px;
+        font-size: 18px;
+        color: #fff1e5;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
     
 }
 
 
 @media only screen and (max-width: 1300px){
     
-    .mainprod_container {
+    .container-prod {
         grid-template-columns: repeat(2,1fr);
         grid-template-rows: auto;
         grid-template-areas: 
@@ -56,38 +50,14 @@
         "area7 area8"
         ;
         gap: 12px;
-        
-        .mainprod_container_caja {
-            background-color: red;
-            
-            &_img {
-                width: 350px;
-                height: 350px;
-                object-fit: cover;
-                border-radius: 15px;
-            
-                
-            }  
-            
-        }
-        .c3 {
-            grid-area: area3;
-        }
-        .c4 {
-            grid-area: area4;
-        }
-        .c5 {
-            grid-area: area5;
-        }
-        .c6 {
-            grid-area: area6;
-        }
-        .c7 {
-            grid-area: area7;
-        }
-        .c8 {
-            grid-area: area8;
-        }
+    }
+
+    .caja img {
+        width: 100%;
+        max-height: 500px;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 15px;
         
     }
 
@@ -95,7 +65,6 @@
         padding: 28% 0;
         font-size: 20px;
     }
-    
 }
 
 
@@ -159,16 +128,16 @@
     width: 12%;
     }
 
-    .mainprod_container {
+    .container-prod {
         width: 70%;
-        
-        h2 {
-            padding: 25px 0px;
-        }
     }
 
     .introprod {
         width: 70%;
+    }
+
+    .container-prod h2 {
+        padding: 25px 0px;
     }
 
 }
