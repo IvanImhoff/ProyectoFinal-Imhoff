@@ -52,18 +52,16 @@ a {
   position: relative;
 }
 
+footer .container-fluid .row {
+  background-color: #312f30;
+}
+footer .container-fluid .logo {
+  width: 150px;
+  height: 150px;
+}
 footer a:hover {
   text-decoration: underline;
   font-size: 18px;
-}
-
-.row {
-  background-color: #312f30;
-}
-
-.logo {
-  width: 150px;
-  height: 150px;
 }
 
 .mainindex {
@@ -182,7 +180,6 @@ footer a:hover {
   width: 100%;
   height: 100%;
 }
-
 .caja img {
   width: 400px;
   height: 400px;
@@ -217,7 +214,8 @@ footer a:hover {
   margin: 20px;
   text-align: center;
   transition: 0.3s;
-  color: #eee;
+  color: #312f30;
+  background-color: rgba(238, 238, 238, 0.8784313725);
 }
 .mainserv .container-serv .cardo:hover {
   transform: translatey(-12px);
@@ -256,9 +254,6 @@ footer a:hover {
   padding-top: 100px;
   display: flex;
   justify-content: space-around;
-}
-.main_proce .interval h2 {
-  font-size: 40px;
 }
 .main_proce .interval .roseta1 {
   border: inset 5px #312f30;

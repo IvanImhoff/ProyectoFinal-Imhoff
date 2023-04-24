@@ -28,7 +28,8 @@
             margin: 20px;
             text-align: center;
             transition: 0.3s;
-            color: #eee;
+            color: $colorlogo3;
+            background-color: #eeeeeee0;
     
             &:hover {
                 transform: translatey(-12px);
@@ -50,8 +51,4 @@
             }
         }
     }
-    
-    
-
-
 }

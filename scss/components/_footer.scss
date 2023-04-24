@@ -1,14 +1,17 @@
 footer {
+    .container-fluid {
+        .row{
+            background-color: $colorlogo3;
+        }
+        .logo {
+            width: 150px;
+            height: 150px;
+        }
+    }
     a:hover {
         text-decoration: underline;
         font-size: 18px;
-}
-}
-.row {
-    background-color: $colorlogo3;
+    }
 }
 
-.logo {
-    width: 150px;
-    height: 150px;
-}
+

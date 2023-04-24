@@ -15,10 +15,12 @@
             text-align: center;
             h1 {
                 @extend .h1std;
+                
             }
             h2 {
                 @extend .h1std;
             }
+            
         }
         &_right {
             background: linear-gradient(45deg, #312f30a4 20%, #985434a6 50%, #312f30a4);
