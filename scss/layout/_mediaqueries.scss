@@ -1,24 +1,6 @@
 
 @media only screen and (max-width: 1350px){
 
-    .container-prod {
-        position: relative;
-        left: 15%;
-        display: grid;
-        grid-template-columns: repeat(3,1fr);
-        grid-template-rows: auto;
-        grid-template-areas: 
-        "area1 area1 area1"
-        "area2 area2 area2"
-        "area3 area4 area5"
-        "area6 area7 area8"
-        ;
-        gap: 15px;
-        width: 80%;
-        padding-bottom: 50px;
-        justify-items: center;
-        
-    }
 
         .caja img {
         width: 350px;
@@ -42,15 +24,6 @@
         "area7 area8"
         ;
         gap: 12px;
-    }
-
-    .caja img {
-        width: 100%;
-        max-height: 500px;
-        height: 100%;
-        object-fit: cover;
-        border-radius: 15px;
-        
     }
 
     .instrumentos2 {
@@ -115,7 +88,7 @@
     }
 
     // productos
-
+    
     .instrumentos2 {
         a {
             padding: 28% 0;
@@ -123,7 +96,7 @@
         }
     }
 
-
+// SERVICIOS
     .main-serv h2 {
         font-size: 16px;
     }
@@ -140,6 +113,10 @@
 
 @media only screen and (max-width: 800px){
 
+    .introprod {
+        width: 70%;
+    }
+
     .instrumentos {    
     width: 12%;
     }
@@ -150,11 +127,8 @@
             padding: 25px 0px;
         }
     }
+} 
 
-    .introprod {
-        width: 70%;
-    }
-}  
 @media only screen and (max-width: 768px){
 
     // INDEX
@@ -189,6 +163,13 @@
                 height: 100%
                 
             }
+        }
+    }
+    // Productos
+    .caja {
+        height: 180px;
+        img {
+            max-height: 100%;
         }
     }
     // contacto
