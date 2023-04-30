@@ -1,7 +1,6 @@
 .mainprod {
     background-color: #985434d0;
-    // max-width: 100vw;
-    // overflow: hidden;
+    position: relative;
     .introprod {
         width: 80%;
         position: relative;
@@ -23,13 +22,57 @@
             padding: 30% 0;
             font-size: 22px;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
+            
         }
         .inst-links {
             color: #f1e9e9;
+            padding: 5px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            background-image: linear-gradient($colorlogo2, $colorlogo1);
+            background-position: 50% 100%;
+            background-repeat: no-repeat;
+            background-size: 0% 2%;
+            transition: 0.3s;
+            &:hover{
+                background-image: linear-gradient($colorlogo2, $colorlogo1);
+                background-size: 100% 2px;
+            }
+            
         }
     }
     p {
         color: #eee;
+    }
+    .scroll_container {
+        position: absolute;
+        top: 0;
+        right:0;
+        height: 100%;
+        
+        &::before {
+            content:'';
+            display: block;
+            height: 100vh;
+            pointer-events: none;
+            }
+        
+        a  {
+            padding: 5px;
+            border-radius: 5px;
+            position: sticky;
+            top: 88vh;
+            cursor: pointer;
+            font-size: 20px;
+            color: #eee;
+            background-color: $colorlogo3;
+
+            &:hover {
+                color: $colorlogo3;
+                background-color: #eee;
+            }
+            }
+
+        
     }
 }
 
@@ -50,10 +93,6 @@
     padding-bottom: 50px;
     justify-items: center;
 
-    h2 {
-        @extend .h2std;
-        padding: 50px 0px;
-    }
     .caja {
             width: 100%;
 
@@ -76,6 +115,14 @@
     }
     .c1 {
         grid-area: area1;
+        width: 100%;
+        h2 {
+            @extend .h2std;
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 10px solid $colorlogo3;
+        }
+        
     }
     
     .c2 {
@@ -112,4 +159,5 @@
     p {
         text-align: justify;
     }
+    
 }

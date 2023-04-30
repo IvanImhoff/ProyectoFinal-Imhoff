@@ -13,19 +13,23 @@
 
         &_left {
             text-align: center;
+            -webkit-box-reflect: below -40px linear-gradient(transparent, transparent, red);
             h1 {
                 @extend .h1std;
-                
+
             }
             h2 {
                 @extend .h1std;
             }
-            
         }
         &_right {
             background: linear-gradient(45deg, #312f30a4 20%, #985434a6 50%, #312f30a4);
             border-radius: 10px;
             padding: 5%;
+            box-shadow: 1px 1px 5px 4px rgba(185, 184, 184, 0.62);
+            -webkit-box-shadow: 1px 1px 5px 4px rgba(185, 184, 184, 0.62);
+            -moz-box-shadow: 1px 1px 5px 4px rgba(185, 184, 184, 0.62);    
+
             & p::first-letter {
                 font-size: 130%;
             } 

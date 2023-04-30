@@ -46,11 +46,16 @@
         .index_first {
             display: flex;
             flex-direction: column;
+            
             &_left {
                 padding: 50px 0;
+                -webkit-box-reflect: below -40px linear-gradient(transparent, transparent, transparent);
             }
             &_right {
                 width: 80%;
+                box-shadow: 1px 1px 5px 6px rgba(48,41,41,0.62);
+                -webkit-box-shadow: 1px 1px 5px 6px rgba(48,41,41,0.62);
+                -moz-box-shadow: 1px 1px 5px 6px rgba(48,41,41,0.62);
             }
         }
     }
@@ -92,6 +97,11 @@
     .instrumentos2 {
         a {
             padding: 28% 0;
+            font-size: 16px;
+        }
+    }
+    .scroll_container {
+        a {
             font-size: 16px;
         }
     }
