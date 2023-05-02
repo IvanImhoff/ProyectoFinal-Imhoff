@@ -9,9 +9,11 @@
     flex-direction: row-reverse;
     }
     .intro_proce {
-        text-align: center;
-        padding-bottom: 30px;
-        @extend .h1std;
+        h1 {
+            text-align: center;
+            // padding-bottom: 30px;
+            @extend .h1std;
+        }
     }
 
     .interval {
@@ -51,4 +53,5 @@
             transition: 0.4s;
         }
     }
+    
 }
