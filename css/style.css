@@ -13,7 +13,7 @@ a {
   text-decoration: none;
 }
 
-.h1std, .maincontacto .formulario h1, .main_proce .intro_proce h1, .mainserv h1, .mainprod .introprod h1, .mainindex .index_first_left h2, .mainindex .index_first_left h1 {
+.h1std, .maincontacto .formulario h1, .main_proce .intro_proce h1, .mainserv h1, .mainprod .introprod h1, .mainindex .index_first h2, .mainindex .index_first h1 {
   letter-spacing: 5px;
   font-size: 60px;
   color: #fff;
@@ -21,12 +21,17 @@ a {
   text-shadow: -5px 3px 5px rgba(36, 32, 32, 0.753);
 }
 @media only screen and (max-width: 768px) {
-  .h1std, .maincontacto .formulario h1, .main_proce .intro_proce h1, .mainserv h1, .mainprod .introprod h1, .mainindex .index_first_left h2, .mainindex .index_first_left h1 {
+  .h1std, .maincontacto .formulario h1, .main_proce .intro_proce h1, .mainserv h1, .mainprod .introprod h1, .mainindex .index_first h2, .mainindex .index_first h1 {
+    font-size: 45px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .h1std, .maincontacto .formulario h1, .main_proce .intro_proce h1, .mainserv h1, .mainprod .introprod h1, .mainindex .index_first h2, .mainindex .index_first h1 {
     font-size: 45px;
   }
 }
 
-.h2std, .main_proce .interval h2, .container-prod .c1 h2 {
+.h2std, .main_proce .interval h2, .container-prod .c1 h2, .mainindex .index_second h2 {
   text-align: center;
   font-family: "Italianno", cursive;
   font-size: 45px;
@@ -36,7 +41,7 @@ a {
   text-shadow: -5px 3px 5px rgba(36, 32, 32, 0.753);
 }
 @media only screen and (max-width: 768px) {
-  .h2std, .main_proce .interval h2, .container-prod .c1 h2 {
+  .h2std, .main_proce .interval h2, .container-prod .c1 h2, .mainindex .index_second h2 {
     font-size: 30px;
   }
 }
@@ -107,32 +112,38 @@ footer .nets {
   gap: 20px;
 }
 
-.mainindex {
-  background-color: #191919;
-  height: 100vh;
-}
 .mainindex .index_first {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  align-items: center;
-  height: 100%;
+  background-image: url(../multimedia/random/fondo102.jpg);
+  background-size: cover;
   color: #eee;
   padding: 2%;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: justify;
 }
-.mainindex .index_first_left {
-  text-align: center;
+.mainindex .index_first div {
   -webkit-box-reflect: below -40px linear-gradient(transparent, transparent, red);
 }
-.mainindex .index_first_right {
-  background: linear-gradient(45deg, rgba(49, 47, 48, 0.6431372549) 20%, rgba(152, 84, 52, 0.6509803922) 50%, rgba(49, 47, 48, 0.6431372549));
-  border-radius: 10px;
-  padding: 5%;
-  box-shadow: 1px 1px 5px 4px rgba(185, 184, 184, 0.62);
-  -webkit-box-shadow: 1px 1px 5px 4px rgba(185, 184, 184, 0.62);
-  -moz-box-shadow: 1px 1px 5px 4px rgba(185, 184, 184, 0.62);
+.mainindex .index_second {
+  margin: 0;
+  background-color: #1f2324;
+  height: auto;
+  padding: 50px;
+  display: flex;
 }
-.mainindex .index_first_right p::first-letter {
+.mainindex .index_second p {
+  color: #eee;
+  text-align: justify;
+}
+.mainindex .index_second p::first-letter {
   font-size: 130%;
+}
+.mainindex .index_second .index_second_left .cont_img img {
+  border-radius: 16px;
+  width: 100%;
+  height: 100%;
 }
 
 .mainprod {
@@ -174,7 +185,8 @@ footer .nets {
   background-size: 100% 2px;
 }
 .mainprod p {
-  color: #eee;
+  color: #fff;
+  text-shadow: -5px 3px 5px rgba(36, 32, 32, 0.753);
 }
 .mainprod .scroll_container {
   position: absolute;
@@ -330,6 +342,9 @@ footer .nets {
 .main_proce :nth-child(odd) {
   flex-direction: row-reverse;
 }
+.main_proce p {
+  text-shadow: -5px 3px 5px rgba(36, 32, 32, 0.753);
+}
 .main_proce .intro_proce h1 {
   text-align: center;
 }
@@ -458,25 +473,8 @@ footer .nets {
   }
 }
 @media only screen and (max-width: 1000px) {
-  .mainindex {
-    padding: 50px 0;
-    display: flex;
-    flex-direction: column;
-    height: auto;
-  }
-  .mainindex .index_first {
-    display: flex;
-    flex-direction: column;
-  }
-  .mainindex .index_first_left {
-    padding: 50px 0;
-    -webkit-box-reflect: below -40px linear-gradient(transparent, transparent, transparent);
-  }
-  .mainindex .index_first_right {
-    width: 80%;
-    box-shadow: 1px 1px 5px 6px rgba(48, 41, 41, 0.62);
-    -webkit-box-shadow: 1px 1px 5px 6px rgba(48, 41, 41, 0.62);
-    -moz-box-shadow: 1px 1px 5px 6px rgba(48, 41, 41, 0.62);
+  .container-fluid .nav-link {
+    background-position: 0% 100%;
   }
   .main_proce .interval {
     display: flex;
@@ -531,9 +529,12 @@ footer .nets {
   }
 }
 @media only screen and (max-width: 768px) {
-  .index_first_left h1 {
-    font-size: 50px;
-    color: red;
+  .mainindex .index_first {
+    text-align: left;
+    align-items: center;
+  }
+  .mainindex .index_second {
+    padding: 10px;
   }
   .main_proce {
     padding: 20px;
@@ -601,6 +602,11 @@ footer .nets {
   }
   .maincontacto .mapa {
     width: 100%;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .mainindex .index_first {
+    text-align: center;
   }
 }
 

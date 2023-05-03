@@ -8,10 +8,12 @@
     & :nth-child(odd){
     flex-direction: row-reverse;
     }
+    p {
+        text-shadow: -5px 3px 5px rgba(36, 32, 32, 0.753);
+    }
     .intro_proce {
         h1 {
             text-align: center;
-            // padding-bottom: 30px;
             @extend .h1std;
         }
     }
