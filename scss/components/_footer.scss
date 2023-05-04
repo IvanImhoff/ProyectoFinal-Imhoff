@@ -10,7 +10,6 @@ footer {
     }
     a:hover {
         text-decoration: underline;
-        font-size: 18px;
     }
     .bi {
         width: 22px;
@@ -35,11 +34,13 @@ footer {
         } 
         }
         
-    }
-    .nets {
-        @include flex (row, center, center, wrap);
-        gap: 20px;
-    }
+    }   
+        .nets {
+            gap: 5px;
+            svg {
+                padding-right: 5px;
+            }
+        }
 }
 
 

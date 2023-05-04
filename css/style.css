@@ -79,7 +79,6 @@ footer .container-fluid .logo {
 }
 footer a:hover {
   text-decoration: underline;
-  font-size: 18px;
 }
 footer .bi {
   width: 22px;
@@ -104,12 +103,10 @@ footer .git a:where(:hover, :focus-visible) {
   color: #312f30;
 }
 footer .nets {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 20px;
+  gap: 5px;
+}
+footer .nets svg {
+  padding-right: 5px;
 }
 
 .mainindex .index_first {
@@ -193,6 +190,7 @@ footer .nets {
   top: 0;
   right: 0;
   height: 100%;
+  margin-right: 5px;
 }
 .mainprod .scroll_container::before {
   content: "";
